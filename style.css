@@ -1,4 +1,128 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 0 40px ;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+header{
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color: white;
+}
+.btn{
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    background-color:chocolate;
+    color: black;
+}
+
+
+
+#about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+.about-btn{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-right: 10px ;
+}
+.about-btn:hover{
+    background-color: chocolate;
+    color:black;
+}
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+
+
+#courses{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    background-color:azure;
+}
+.card:hover{
+    background-color: chocolate;
+}
+.card-btn{
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+.card-btn:hover{
+    background-color:cadetblue;
+    color: white;
+}
+.card-img{
+    overflow: hidden;
+    width: 20%;
+    height: 20%;
+}
+.title {
+    align-self: center;
+}
+
+@media (max-width:767px) {
+    body{
+        background-color: black;
+    }
 }
